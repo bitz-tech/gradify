@@ -226,6 +226,8 @@
         #bdtext{
             font-size: larger;
         }
+
+      
         
 
         /* Responsive */
@@ -251,6 +253,76 @@
                 gap: 10px;
             }
         }
+
+        /* Footer CSS */
+        .footer {
+            background-color:#481057 ;
+            color: white;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+        }
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .footer-section {
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+        .footer-section h3 {
+            margin-bottom: 15px;
+        }
+        .footer-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+        .footer-section ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .footer-section ul li a:hover {
+            text-decoration: underline;
+        }
+        .logo-newsletter form {
+            display: flex;
+            margin-top: 10px;
+        }
+        .logo-newsletter input {
+            padding: 10px;
+            border: none;
+            border-radius: 4px 0 0 4px;
+            width: 200px;
+        }
+        .logo-newsletter button {
+            padding: 10px;
+            background-color: #6a4ec2;
+            color: white;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+        }
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            border-top: 1px solid #fff;
+            padding-top: 20px;
+        }
+        .footer-bottom a {
+            color: white;
+            text-decoration: none;
+        }
+        .footer-bottom a:hover {
+            text-decoration: underline;
+        }
+        
+
+
     </style>
 </head>
 <body>
@@ -277,7 +349,7 @@
             </div>
             <h2>Flexible Solutions for Your Institute/University</h2>
             <p>Join our community today and relive the memories, rebuild the networks, and recharge your passion by empowering lifelong connections.</p>
-            <button class="cta-button">
+            <button class="cta-button" onclick="window.location.href='login.html'">
                 <span>Start free today <span class="material-symbols-outlined">
                     trending_flat
                     </span></span>
@@ -380,6 +452,41 @@
             </div>
         </div>
     </div>
+    <!-- Footer Start -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section logo-newsletter">
+                <h3>Gradify</h3>
+                <p>Stay updated with our newsletter:</p>
+                <form>
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect with Us</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Gradify. All rights reserved.</p>
+            <a href="#">Privacy Policy</a>
+        </div>
+    </footer>
+    
 
     <script>
         const studentBtn = document.getElementById('studentBtn');
